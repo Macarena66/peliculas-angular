@@ -1,0 +1,83 @@
+@media (max-width: 300px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+.main-header {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.main-header > div {
+  flex-grow: 1;
+}
+
+.main-header__brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.main-header__info {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-header__usuario {
+  color: red;
+  padding-left: 0.5rem;
+}
+
+.main-nav {
+  flex-grow: 0;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #ff1b68;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.main-nav__item a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.main-nav__item_logout a {
+  cursor: pointer;
+  color: white;
+  background: #ff1b68;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.main-nav__item_logout a:hover {
+  color: #ff1b68;
+  background-color: white;
+  border-bottom: none;
+}
+
+.main-nav__item_mensajes::before {
+  content: "✉";
+}
